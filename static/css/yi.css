@@ -1,0 +1,418 @@
+.gua {
+    float: left;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: gray;
+    cursor: pointer;
+}
+
+.yao {
+    font-size: 0px;
+    margin-bottom: 6px;
+}
+
+.line {
+    width: 36px;
+    height: 12px;
+    background: #000;
+    display: inline-block;
+}
+
+.yin .change {
+    width: 10px;
+    height: 12px;
+    background: #fff;
+    display: inline-block;
+}
+
+.yang .change {
+    width: 10px;
+    height: 12px;
+    background: #000;
+    display: inline-block;
+}
+
+.south {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.north {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: rotate(180deg)
+}
+
+.west {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    transform: rotate(90deg)
+}
+
+.east {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-90deg)
+}
+
+.southeast {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-45deg);
+}
+
+.northwest {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotate(135deg)
+}
+
+.southwest {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    transform: rotate(45deg)
+}
+
+.northeast {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(-135deg);
+}
+
+.position {
+    font-size: 16px;
+    color: gainsboro;
+}
+
+/* 乾 */
+.south2northwest {
+    animation: south2northwest 1s forwards ease;
+}
+@keyframes south2northwest {
+    from {position: absolute;
+    top: 50px;
+    left: 200px;}
+    to {position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotate(135deg)}
+}
+.northwest2south {
+    animation: northwest2south 1s forwards ease;
+}
+@keyframes northwest2south {
+    to {position: absolute;
+    top: 50px;
+    left: 200px;}
+    from {position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotate(135deg)}
+}
+
+/* 坤 */
+.north2southwest {
+    animation: north2southwest 1s forwards ease;
+}
+@keyframes north2southwest {
+    from {position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: rotate(180deg)}
+    to {position: absolute;
+    top: 100px;
+    left: 300px;
+    transform: rotate(45deg)}
+}
+.southwest2north {
+    animation: southwest2north 1s forwards ease;
+}
+@keyframes southwest2north {
+    to {position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: rotate(180deg)}
+    from {position: absolute;
+    top: 100px;
+    left: 300px;
+    transform: rotate(45deg)}
+}
+
+/* 兑 */
+.southeast2west {
+    animation: southeast2west 1s forwards ease;
+}
+@keyframes southeast2west {
+    from {position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-45deg);}
+    to {position: absolute;
+    top: 200px;
+    left: 350px;
+    transform: rotate(90deg)}
+}
+.west2southeast {
+    animation: west2southeast 1s forwards ease;
+}
+@keyframes west2southeast {
+    to {position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-45deg);}
+    from {position: absolute;
+    top: 200px;
+    left: 350px;
+    transform: rotate(90deg)}
+}
+
+/* 艮 */
+.northwest2northeast {
+    animation: northwest2northeast 1s forwards ease;
+}
+@keyframes northwest2northeast {
+    from {position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotate(135deg)}
+    to {position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(-135deg);}
+}
+.northeast2northwest {
+    animation: northeast2northwest 1s forwards ease;
+}
+@keyframes northeast2northwest {
+    to {position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: rotate(135deg)}
+    from {position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(-135deg);}
+}
+
+/* 巺 */
+.southwest2southeast {
+    animation: southwest2southeast 1s forwards ease;
+}
+@keyframes southwest2southeast {
+    from {position: absolute;
+    top: 100px;
+    left: 300px;
+    transform: rotate(45deg)}
+    to {position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-45deg);}
+}
+.southeast2southwest {
+    animation: southeast2southwest 1s forwards ease;
+}
+@keyframes southeast2southwest {
+    to {position: absolute;
+    top: 100px;
+    left: 300px;
+    transform: rotate(45deg)}
+    from {position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-45deg);}
+}
+
+/* 震 */
+.northeast2east {
+    animation: northeast2east 1s forwards ease;
+}
+@keyframes northeast2east {
+    from {position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(-135deg);}
+    to {position: absolute;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-90deg)}
+}
+.east2northeast {
+    animation: east2northeast 1s forwards ease;
+}
+@keyframes east2northeast {
+    to {position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(-135deg);}
+    from {position: absolute;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-90deg)}
+}
+
+/* 离 */
+.east2south {
+    animation: east2south 1s forwards ease;
+}
+@keyframes east2south {
+    from {position: absolute;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-90deg)}
+    to {position: absolute;
+    top: 50px;
+    left: 200px;
+    transform: rotate(0deg)}
+}
+.south2east {
+    animation: south2east 1s forwards ease;
+}
+@keyframes south2east {
+    to {position: absolute;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-90deg)}
+    from {position: absolute;
+    top: 50px;
+    left: 200px;
+    transform: rotate(0deg)}
+}
+
+/* 坎 */
+.west2north {
+    animation: west2north 1s forwards ease;
+}
+@keyframes west2north {
+    from {position: absolute;
+    top: 200px;
+    left: 350px;
+    transform: rotate(90deg)}
+    to {position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: rotate(180deg)}
+}
+.north2west {
+    animation: north2west 1s forwards ease;
+}
+@keyframes north2west {
+    to {position: absolute;
+    top: 200px;
+    left: 350px;
+    transform: rotate(90deg)}
+    from {position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: rotate(180deg)}
+}
+
+.yanbtn {
+    position: absolute;
+    left: 471px;
+    top: 320px;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 0px 6px 2px 6px;
+    box-shadow:-2px 0px 8px #f00,0px -2px 8px #000,0px 2px 8px #9e038a,2px 0px 8px #0f0;
+    border-radius: 20%;
+}
+
+#yantitle {
+    writing-mode: tb-rl;
+    position: absolute;
+    left: 450px;
+    top: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    padding: 6px 4px 0px 4px;
+    background: #e7e7e7;
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 6px;
+    /* text-align: center; */
+    /* width: 100%; */
+    color: gray;
+    font-size: 14px;
+}
+
+#zy64gua {
+    float: left;
+    /* margin-left: 630px; */
+    margin-top: 10px;
+    /* width: 100%; */
+    padding-left: 560px;
+    height: 700px;
+    overflow-y: auto;
+}
+
+.gua64 {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: gray;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.yao64 {
+    font-size: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.gua64 :hover {
+    margin-left: 20px;
+}
+
+.line64 {
+    width: 24px;
+    height: 8px;
+    background: #000;
+    display: inline-block;
+
+    border: 0px solid #fff !important;
+}
+
+.yin64 .change {
+    width: 5px;
+    height: 8px;
+    background: #fff;
+    display: inline-block;
+
+    border: 0px solid #fff !important;
+}
+
+.yang64 .change {
+    width: 5px;
+    height: 8px;
+    background: #000;
+    display: inline-block;
+
+    border: 0px solid #fff !important;
+}
+
+.name64 {
+    color: #fff;
+    background: #696969;
+    font-size: 14px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 15%;
+}
